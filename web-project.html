@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="./favicon.ico">
+   <link rel="stylesheet" href="./styles/style.css" />
+   <title>Homework 3: Website project</title>
+</head>
+
+<body>
+   <div class="wrapper">
+
+      <header class="header">
+         <div class="header__container">
+            <div class="header__content">
+               <a class="header__logo" href="./index.html" aria-label="Logotype">
+                  <img class="header__logo-img" src="./assets/images/logo/logo-dark.png" alt="logotype" width="709" height="518">
+               </a>
+
+               <nav class="header__nav">
+                  <ul class="header__menu">
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="./index.html">Team</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="./team-members.html">Team members</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="./hour-of-code.html">Hour of Code</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link header__menu-link_active" href="./web-project.html">Web project</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="./code-artist.html">Code artist</a>
+                     </li>
+                  </ul>
+               </nav>
+
+               <div class="header__actions">
+                  <button class="header__theme theme" id="theme-btn" type="button" aria-label="Theme toggle button">
+                     <span class="theme__icon-wrapper">
+                        <svg class="theme__icon">
+                           <use class="theme__use" href="./assets/icons.svg#moon-icon" />
+                        </svg>
+                     </span>
+                  </button>
+
+                  <button class="header__menu-btn">
+                     <svg width="40" height="40" viewBox="0 0 100 100">
+                        <path class="line line1"
+                              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <main id="app">
+         <section class="profiles">
+            <div class="profiles__container">
+               <div class="profiles__content">
+                  <h1 class="profiles__title">Code Academy Profiles</h1>
+                  <div class="profiles__items">
+                     <a class="profiles__item" href="https://www.codecademy.com/profiles/aysuaghayeva20371" target="_blank">
+                        <img class="profiles__image" src="./assets/images/members/1.jpg" alt="Student image" width="300" height="300">
+                        <span class="profiles__name">Aysu's Profile</span>
+                     </a>
+                     <a class="profiles__item" href="https://www.codecademy.com/profiles/nalaskarli23905" target="_blank">
+                        <img class="profiles__image" src="./assets/images/members/2.jpg" alt="Student image" width="300" height="300">
+                        <span class="profiles__name">Nijat's Profile</span>
+                     </a>
+                     <a class="profiles__item" href="https://www.codecademy.com/profiles/feldarov23199ada.edu.az" target="_blank">
+                        <img class="profiles__image" src="./assets/images/members/3.jpg" alt="Student image" width="300" height="300">
+                        <span class="profiles__name">Farid's Profile</span>
+                     </a>
+                     <a class="profiles__item" href="https://www.codecademy.com/profiles/KuzeyKapucuoghlu" target="_blank">
+                        <img class="profiles__image" src="./assets/images/members/4.jpg" alt="Student image" width="300" height="300">
+                        <span class="profiles__name">Kuzey's Profile</span>
+                     </a>
+                  </div>
+                  <a class="profile__follow" href="https://www.instagram.com/team85_officiall?igsh=ZWVkejh2cDNiY2h6" target="_blank">
+                     <span>Follow us on Instagram</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="lucide lucide-instagram">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </section>
+
+         <section class="web">
+            <div class="web__container">
+               <h2 class="web__title">Navigation</h2>
+
+               <div class="web__content">
+                  <div class="web__box">
+                     <img class="web__img" src="./assets/images/web/1.png" alt="">
+                     <div class="web__text">
+                        <p>This code dynamically loads HTML content from a specified URL and updates the page's main section.</p>
+                        <h3 class="web__subtitle">Here's how it works:</h3>
+                        <p>Content Fetching: Sends an HTTP request to the given URL and retrieves the HTML response.</p>
+                        <h3 class="web__subtitle">Page Content Update:</h3>
+                        <p>
+                           Extracts the
+                           section of the loaded HTML and replaces the content of the element with id="app" on the current page.
+                        </p>
+                        <h3 class="web__subtitle">URL Update:</h3>
+                        <p>
+                           Uses the browser's history.pushState to update the URL in the address bar without reloading the page, enabling seamless navigation.
+                        </p>
+                        <h3>Active Link Highlighting:</h3>
+                        <p>
+                           Calls a function to visually update the active link based on the current URL.
+                        </p>
+                        <h3 class="web__subtitle">Error Handling:</h3>
+                        <p>
+                           Catches and logs any errors during the process, such as failed requests or invalid responses.
+                           This technique is a fundamental part of Single-page applications (SPA), enabling smooth navigation and content updates without full-page reloads.</p>
+                     </div>
+                  </div>
+                  <div class="web__box">
+                     <img class="web__img" src="./assets/images/web/2.png" alt="">
+                     <div class="web__text">
+                        <p>This code manages navigation in a single-page application (SPA) by dynamically loading content and updating the active link:<code>updateActiveLink</code> </p>
+                        <p> Highlights the navigation link that matches the current URL by toggling the header__menu-link_active class.</p>
+                        <h3 class="web__subtitle">setupNavigation:</h3>
+                        <p>
+                           Listens for link clicks, prevents default behavior for internal links, and dynamically loads the content using loadPage.
+                           Handles browser back/forward navigation with the popstate event, loading the correct content for the current path.
+                        </p>
+                        <p>Loads the initial page content on setup.</p>
+                        <p>This ensures smooth navigation, URL updates, and active link highlighting without full-page reloads.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+      </main>
+
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__copy">
+               <span> @2024 My Team.</span>
+               <span>All rights reserved.</span>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+
+   <script src="./scripts/main.js" type="module"></script>
+</body>
+
+</html>
